@@ -43,7 +43,7 @@ static char	**free_all(char **ptr, int size)
 		i++;
 	}
 	free(ptr);
-	return (ptr);
+	return (NULL);
 }
 
 static size_t	ft_strlenc(const char *str, char c)
