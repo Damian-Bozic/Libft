@@ -24,10 +24,8 @@
 void	ft_striteri(char *str, void (*f)(unsigned int, char*))
 {
 	int		i;
-	char	c;
 
 	i = 0;
-	c = 0;
 	while (str[i] != '\0')
 	{
 		f(i, &str[i]);
