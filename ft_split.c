@@ -64,9 +64,11 @@ char	**ft_split(char const *str, char c)
 
 	i = 0;
 	j = 0;
+	if (!str)
+		return (NULL);
 	rtn = (char **)ft_calloc(1 + wordcount(str, c), sizeof(char *));
 	if (!rtn)
-		return (0);
+		return (NULL);
 	while (str[i] && str[i] == c)
 		i++;
 	while (j < wordcount(str, c))
